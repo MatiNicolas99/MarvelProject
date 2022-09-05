@@ -4,7 +4,7 @@ export const CharacatersFooter = () => {
   return (
     <div className="characters__footer">
       <div className="characters__information">
-        <p>Sitio creado por Matías Briceño Vilches</p>
+        <p>Sitio creado por Matías Briceño</p>
         <p>Sígueme para más info.</p>
       </div>
       <div className="characters__links">

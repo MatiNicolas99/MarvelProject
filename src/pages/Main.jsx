@@ -5,7 +5,7 @@ export const Main = () => {
     return (
         <>
         <div className="containerglobal">
-            <video src="./src/imgs/marvelvideo.mp4" muted loop autoPlay></video>
+            {/* <video src="./src/imgs/marvelvideo.mp4" muted loop autoPlay></video> */}
             <div className="content">
                 <div className="textBox">
                     <h2><span>Marvel Studios</span></h2>
