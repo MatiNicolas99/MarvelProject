@@ -26,13 +26,18 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 400px) {
+  .toggle {
+    width: auto;
+    padding: 5% 10% 0 0%;
+  }
+}
 @media screen and (max-width: 700px) {
   .toggle {
     flex-direction: row;
     justify-content: space-between;
-    width: 220px;
-    height: fit-content;
-    padding: 5% 0 0 5%;
+    width: auto;
+    padding: 5% 0% 0 5%;
   }
   .toggle label {
     width: 100px;

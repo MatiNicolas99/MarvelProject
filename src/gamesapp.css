@@ -12,11 +12,7 @@ body, html {
 }
 
 section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    background: black;
+ background: black;
 }
 
 /* section video {
@@ -52,6 +48,11 @@ header ul {
 
 header ul li {list-style: none;}
 .containerglobal{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: black;
     background-image: url("https://images.hdqwalls.com/wallpapers/wolverine-dark-4k-si.jpg");
     background-size: cover;
     background-position: center;
@@ -85,7 +86,7 @@ header ul li {list-style: none;}
 }
 
 .content .textBox p{
-    width: 50%;
+    width: 100%;
     font-size: 15px;
     word-spacing: 5px;
 }
@@ -101,16 +102,15 @@ header ul li {list-style: none;}
 }
 
 @media screen and (max-width: 450px) {
+    .toogle{display: none;}
 
     header .logo {
         display: none;
     }
     .containerglobal .content {
-        width: 280px;
+        width: 100%;
     }
-    .toogle{
-        display: none;
-    }
+    
   }
 @media screen and (max-width: 700px) {
     .toogle{display: none;}
@@ -119,7 +119,7 @@ header ul li {list-style: none;}
     }
   
     .containerglobal .content {
-        width: 280px;
+        display: none;
     }
 
     header ul {
@@ -129,6 +129,7 @@ header ul li {list-style: none;}
     section video {
         height: 180vh;
     }
+    
     .content {
         position: relative;
         width: 100%;

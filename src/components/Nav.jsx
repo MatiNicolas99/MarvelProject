@@ -72,8 +72,8 @@ transition: all 0.3s ease-in-out;
   width: 100%;
 }
 @media (max-width: 500px) {
-  font-size: 12px;
-  margin-left: 20px;
+  font-size: 14px;
+  margin-left: 10px;
   margin-right: 0px;
 }
 `;

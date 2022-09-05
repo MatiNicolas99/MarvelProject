@@ -3,6 +3,7 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../imgs/captainmarvel.jpg");
       height: 700px;
       border-radius: 20px;
+      padding-left: 10%;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -26,6 +27,7 @@
     .characters__info {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../imgs/captainamerica.jpg");
       text-align: start;
+      padding-left: 5%;
       
     }
     .characters__info h1{
