@@ -1,0 +1,50 @@
+.characters__footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("../imgs/spider.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    border-radius: 20px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .characters__footer p{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+  .characters__links {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }  
+  .fa:hover {
+    color: red;
+  }
+
+
+  @media (min-width: 768px) {
+    .characters__footer {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../imgs/marvel.jpg");
+      text-align: end;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      
+    }
+    .characters__footer h1{
+      font-size: 35px;
+    }
+    .characters__footer p{
+      font-size: 30px;
+    }
+    .characters__links {
+      width: 500px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }

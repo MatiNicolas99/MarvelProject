@@ -1,0 +1,37 @@
+
+  .characters__info {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../imgs/captainmarvel.jpg");
+      height: 700px;
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .characters__info h1{
+    font-size: 25px;
+  }
+  .characters__info p{
+    font-size: 15px;
+  }
+  .character__input {
+    display: flex;
+    justify-items: flex-start;
+  }
+
+  @media (min-width: 768px) {
+    .characters__info {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("../imgs/captainamerica.jpg");
+      text-align: start;
+      
+    }
+    .characters__info h1{
+      font-size: 35px;
+    }
+    .characters__info p{
+      font-size: 30px;
+    }
+  }

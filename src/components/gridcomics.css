@@ -1,0 +1,137 @@
+  
+  .characters__grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 10% 0 0;
+  }
+  .card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10% 0 0 0;
+    
+  }
+  
+  .card__container {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    background: white;
+    position: relative;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 20% 0 0;
+  }
+  .card__container:hover {
+    transform: translateY(20px);
+  }
+  .card__container:hover:before {
+    opacity: 1;
+  }
+  .card__container:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .card__container:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card__container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .card__container .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+  }
+  .card__container .info h1 {
+    font-size: 30px;
+    margin: 0px;
+  }
+  .card__container .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  .card__container .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  .card__container .info button:hover {
+    background: red;
+    color: white;
+  } 
+
+  @media (min-width: 450px) {
+    .characters__grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0%;
+    }
+    .card__wrapper {
+      display: flex;
+      width: 90%;
+      padding: 10% 0 0 0;
+    }
+    .card__container {
+      width: 430px;
+      height: 360px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .characters__grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0%;
+    }
+    .card__wrapper {
+      display: flex;
+      width: 90%;
+      padding: 10% 0 0 0;
+    }
+    .card__container {
+      width: 280px;
+      height: 360px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .characters__grid {
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 0 0 0;
+    }
+    .card__wrapper {
+      padding: 10% 0 0 0;
+    }
+    .card__container {
+      width: 300px;
+      height: 300px;
+      margin: 0 0 0 0;
+    }
+  }
+
+

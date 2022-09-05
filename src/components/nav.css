@@ -1,0 +1,11 @@
+.header {
+    position: fixed;
+    overflow: hidden;
+    transition: 0.5s ease-in;
+    color: white;
+}
+.header-bg{
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+

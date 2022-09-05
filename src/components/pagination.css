@@ -1,0 +1,43 @@
+.toggle {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0 0 0%;
+  width: auto;
+}
+
+.toggle input {
+  display: none;  
+}
+
+.toggle label {
+  width: 60px;
+  height: 25px;
+  margin: 0 20px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgb(129, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 5px 5px -5px rgba(255, 64, 129, 0.15), 0 10px 10px -5px rgba(255, 64, 129, 0.15), 0 15px 15px -5px rgba(255, 64, 129, 0.15), 0 20px 20px -5px rgba(255, 64, 129, 0.15);
+  transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .toggle {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 220px;
+    height: fit-content;
+    padding: 5% 0 0 5%;
+  }
+  .toggle label {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+  }
+}
+
