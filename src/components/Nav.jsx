@@ -18,7 +18,7 @@ window.addEventListener('scroll', changeColor);
 
   return (
     <Header className={color ? 'header header-bg': 'header'} >
-      <Links to={"/"}><img src="/src/imgs/marvelLogo.png" alt="" className='logo' /></Links>
+      <Links to={"/"}><img src="./src/imgs/marvelLogo.png" alt="" className='logo' /></Links>
       <div className="toggle"></div>
       <ul className='navigation'>
         <li><Links className="link" to={"/"}>Inicio</Links></li>
