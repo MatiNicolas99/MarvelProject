@@ -11,10 +11,14 @@ export const SearchedComics = () => {
     const params = useParams();
 
     const getComicsSearch = async(name) => {
-      const api_fetch = await fetch(`https://gateway.marvel.com:443/v1/public/comics?titleStartsWith=${name}&ts=1&apikey=6f43cffc79dcf864c9585a50e7ed862b&hash=9eed66ba123af44e56d2d7e96498d820`)
-      const {data} = await api_fetch.json();
-      console.log(data);
-      setSearchComics(data.results)
+      try {
+        const api_fetch = await fetch(`https://gateway.marvel.com:443/v1/public/comics?titleStartsWith=${name}&ts=1&apikey=6f43cffc79dcf864c9585a50e7ed862b&hash=9eed66ba123af44e56d2d7e96498d820`)
+        const {data} = await api_fetch.json();
+        console.log(data);
+        setSearchComics(data.results)
+      } catch (error) {
+        console.log(error);
+      }
     }
       useEffect(() => {
         getComicsSearch(params.search)

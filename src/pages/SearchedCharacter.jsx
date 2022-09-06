@@ -11,11 +11,15 @@ export const SearchedCharacter = () => {
     const params = useParams();
 
     const getCharacterSearch = async(name) => {
-
-      const api_fetch = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=1&apikey=6f43cffc79dcf864c9585a50e7ed862b&hash=9eed66ba123af44e56d2d7e96498d820`)
-      const {data} = await api_fetch.json();
-      console.log(data)
-      setSearchCharacter(data.results);
+      try {
+        const api_fetch = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=1&apikey=6f43cffc79dcf864c9585a50e7ed862b&hash=9eed66ba123af44e56d2d7e96498d820`)
+        const {data} = await api_fetch.json();
+        console.log(data)
+        setSearchCharacter(data.results);  
+      } catch (error) {
+        console.log(error)
+      }
+      
     }
       useEffect(() => {
         getCharacterSearch(params.search)
